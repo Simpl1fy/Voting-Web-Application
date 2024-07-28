@@ -1,0 +1,19 @@
+{
+  "name": "voting-web-application",
+  "version": "1.0.0",
+  "description": "Voting Application with admin",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simpl1fy/Voting-Web-Application.git"
+  },
+  "author": "Gourab Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simpl1fy/Voting-Web-Application/issues"
+  },
+  "homepage": "https://github.com/Simpl1fy/Voting-Web-Application#readme"
+}
