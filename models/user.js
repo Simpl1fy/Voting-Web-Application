@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -16,7 +17,7 @@ const userSchema = new mongoose.Schema({
         type: String
     },
     address: {
-        type: Sting,
+        type: String,
         required: true
     },
     adharCardNumber: {
@@ -34,7 +35,7 @@ const userSchema = new mongoose.Schema({
         defulat: 'voter'
     },
     isVoted: {
-        type: boolean,
+        type: Boolean,
         default: false
     }
 });
