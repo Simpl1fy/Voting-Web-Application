@@ -65,5 +65,19 @@ router.post('/login', async (req, res) => {
     }
 })
 
+router.get('/profile', jwtAuthMiddleware, async(req, res) => {
+    try {
+        const user = req.jwtPayload;
+
+        const userId = user.object_id;
+        const response = await User.findById(userId)
+        console.log("User Data has been fetched by token");
+        res.status(200).json({Response: response});
+    } catch(err) {
+        console.log(err);
+        res.status(500).json({Error: 'Internal Server Error'})
+    }
+})
+
 
 module.exports = router;
