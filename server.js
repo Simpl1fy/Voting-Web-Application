@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 const userRoutes = require('./routes/userRoutes.js');
-app.use('/user', userRoutes);
+app.use('/', userRoutes);
 
 app.listen(PORT, () => {
 	console.log("Listening to port 3000, and server is online");
